@@ -1,9 +1,13 @@
+import MainLayout from "./components/AppLayout"
+import { Route, Routes } from "react-router"
 
 function App() {
   return (
-      <div className="App">
-          <h1>LabDash</h1>
-      </div>
+      <Routes>
+          <Route path={"/"} element={<MainLayout/>}>
+
+          </Route>
+      </Routes>
   )
 }
 
